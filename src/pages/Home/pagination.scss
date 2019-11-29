@@ -1,0 +1,142 @@
+@import "../../../static/sass/variables.scss";
+@import "../../../static/mixins.scss";
+
+.pagination {
+  display: flex !important;
+
+  @include mq(tablet, max) {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  &__wrap {
+    width: rem(30);
+    height: rem(30);
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &--active {
+      border: 1px solid #0d5ade; 
+    }
+  }
+  &__item {
+    width: rem(16);
+    height: rem(16);
+    background-color: #fff;
+    background-color: #0d5ade;
+    border-radius: 50%;
+  }
+  ul { 
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+  }
+
+  li {
+    list-style-type: none; /* Убираем маркеры */
+  }
+
+  li {
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.7s;
+    float: left;
+    @media (max-width: $mobile_l) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  li.slick-active {
+    border: 1px solid #0d5ade;
+  }
+
+  li button {
+    cursor: pointer;
+    font-size: 0;
+    padding: 0;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    background-color: #0d5ade;
+    border-radius: 100%;
+    @media (max-width: $mobile_l) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+.pagination2 {
+  li {
+    background-color: #0d5ade;
+    border: 1px solid #0d5ade;
+  }
+
+  li button {
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 16px;
+    height: 16px;
+    background-color: #0d5ade;
+    background-color: #fff;
+    border-radius: 100%;
+    @media (max-width: $mobile_l) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  li.slick-active {
+    border: 1px solid #fff;
+  }
+}
+.pagination3 {
+  margin-top: -80px;
+  position: absolute;
+  left: calc(50% - 660px);
+  @media (max-width: $desctops_m) and (min-width: $mobile_l+1) {
+    left: 5%;
+  }
+  li {
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+
+  li button {
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 100%;
+    @media (max-width: $mobile_l) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  li.slick-active {
+    border: 1px solid #fff;
+  }
+}

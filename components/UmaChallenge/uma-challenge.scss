@@ -1,0 +1,23 @@
+@import "../../static/sass/variables.scss";
+@import "../../static/sass/mixins.scss";
+
+.challenge-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: $lightblue;
+  text-decoration: none;
+  position: relative;
+  @media (max-width: $mobile_l) {
+    font-size: 16px;
+    line-height: 19px;
+    left: 13px;
+    width: 138px !important;
+    height: 30px !important;
+  }
+  @media (max-width: 330px) {
+    width: 123px !important;
+    height: 25px !important;
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../../static/sass/variables.scss";
+@import "../../../static/sass/mixins.scss";
+
+.about {
+  background-color: #fff;
+  display: flex;
+  margin: rem(80) auto;
+  align-items: center;
+  @media (max-width: $tablets) {
+    margin: rem(70) auto;
+  }
+  @media (max-width: $mobile_l) {
+    margin: 50px 0 0;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 60px;
+  }
+  &__image {
+    width: 49%;
+    margin-right: 5%;
+    max-width: 954px;
+    img {
+      display: block;
+    }
+    @media (max-width: $mobile_l) {
+      width: 100%;
+      margin-right: 0%;
+      margin-top: rem(70);
+      margin-bottom: rem(45);
+    }
+  }
+  &__right {
+    width: 42%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: $mobile_l+1) {
+      padding-top: 1rem;
+    }
+    @media (max-width: $mobile_l) {
+      width: 90%;
+      align-self: center;
+    }
+    @media (max-width: $mobile_l) {
+      .pagination {
+        margin-top: 10px;
+      }
+    }
+  }
+  &__header {
+    margin-bottom: rem(60);
+    @media (max-width: 1800px) {
+      margin-bottom: rem(30);
+    }
+    @media (max-width: $mobile_l) {
+      margin-bottom: 0;
+      position: absolute;
+      top: 0;
+    }
+    @media (max-width: $tablets) {
+      margin-bottom: rem(38);
+    }
+  }
+  &__text {
+    @media (max-width: $mobile_l) {
+      text-align: center;
+    }
+    .typography--headersm {
+      margin-bottom: rem(53);
+      @media (max-width: 1800px) {
+        margin-bottom: rem(43);
+        font-size: rem(40);
+        line-height: rem(50);
+      }
+      @media (max-width: $mobile_l) {
+        margin-bottom: rem(30);
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    .typography--text {
+      margin-bottom: rem(50);
+      @media (max-width: 1800px) {
+        margin-bottom: rem(35);
+      }
+      @media (max-width: $mobile_l) {
+        margin-bottom: rem(30);
+      }
+    }
+    p {
+      color: #555;
+    }
+  }
+  .typography--header span {
+    margin-left: 0;
+  }
+  &__nav {
+  }
+}

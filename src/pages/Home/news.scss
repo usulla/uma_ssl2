@@ -1,0 +1,141 @@
+@import "../../../static/sass/variables.scss";
+@import "../../../static/sass/mixins.scss";
+
+.react-parallax-background-children { 
+  width: 100%;
+}
+.news {
+  @media (max-width: $mobile_l) {
+    &__text h2 {
+      padding-left: 25px;
+      margin-top: -9rem;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    min-height: rem(650);
+    // background: #fff url("../../images/bg/bg_3.jpg") no-repeat center;
+    background-size: cover;
+    justify-content: center;
+    color: #fff;
+
+    @media (max-width: $mobile_l) {
+      justify-content: flex-end;
+      background: #fff url("../../images/bg/bg3_mob.jpg") no-repeat center;
+      background-size: cover;
+      height: 77vw;
+      min-height: auto;
+    }
+    h2 {
+      @media (min-width: $mobile_l+1) {
+				margin-top: -6rem;
+				font-size: rem(60)!important;
+				line-height: rem(73)!important;
+      }
+    }
+  }
+  &__wrap {
+    margin: 0 auto;
+		margin-top: -15.8rem;
+    @media (max-width: $mobile_l) {
+      width: 90%;
+      margin-top: -4rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: rem(90);
+    // &:last-child {
+    //   margin-bottom: rem(0);
+    // }
+    @media (max-width: $mobile_l) {
+      background-color: $blue;
+      padding-bottom: rem(30);
+    }
+  }
+  &__item {
+    width: 30%;
+    color: #fff;
+    padding: rem(27) 0;
+    margin-bottom: rem(65);
+    font-size: rem(20);
+    line-height: rem(24);
+    @media (max-width: $tablets) {
+      width: 48%;
+      margin-bottom: rem(45);
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+    &:nth-child(1) {
+      background: $blue;
+    }
+    &:nth-child(2) {
+      background: $lightblue;
+    }
+    &:nth-child(3) {
+      background: $darkblue;
+    }
+    &:nth-child(4) {
+      background: $lightblue;
+    }
+    &:nth-child(5) {
+      background: $blue;
+      width: 65%;
+    }
+    &:last-child {
+      margin-right: 0;
+      @media (max-width: $tablets) {
+        width: 100%;
+      }
+    }
+    @media (max-width: $mobile_l) {
+      width: 100%;
+      margin-right: 0;
+      padding: rem(20) 25px;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: rem(30);
+      line-height: rem(37);
+      font-weight: 600;
+      margin-bottom: rem(28);
+      padding: 1.75rem rem(32) 0;
+
+      @media (max-width: $mobile_l) {
+        padding: 0;
+        font-size: 1.2rem;
+        margin-bottom: rem(30);
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    p {
+			padding: 0 rem(32);
+			margin-bottom: 0;
+      @media (max-width: $mobile_l) {
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+      &.hashtag {
+        text-align: right;
+        margin: 0;
+        margin-bottom: 0px;
+        @media (max-width: $mobile_l) {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

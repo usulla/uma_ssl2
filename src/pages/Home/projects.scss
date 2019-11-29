@@ -1,0 +1,142 @@
+@import "../../../static/sass/variables.scss";
+@import "../../../static/sass/mixins.scss";
+
+.project {
+  text-align: center;
+  margin-bottom: rem(200);
+  @media (max-width: $mobile_l) {
+    margin-bottom: rem(40);
+    margin-top:10px;
+  }
+  &__header {
+    font-size: rem(45);
+    line-height: rem(55);
+    font-weight: 600;
+    margin-bottom: rem(120);
+    @media (max-width: $mobile_l) {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 1.25rem;
+      line-height: 1.6rem;
+    }
+  }
+  &__cont {
+    img {
+      max-width: 82%;
+      margin: 0 auto;
+      @media (max-width: $mobile_l) {
+        max-width: 70% !important;
+      }
+    }
+    .project__logos {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo-item {
+        width: 9%;
+        margin: 0 0.7rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          position: absolute;
+          opacity: 1;
+          transition: filter 0.5s ease;
+          filter: grayscale(100%);
+        }
+        .tnt {
+          max-width: 82px;
+        }
+        .tv3 {
+          max-width: 57px;
+        }
+        &:hover {
+          cursor: pointer;
+          img {
+            filter: grayscale(0%);
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      img {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+      .tnt {
+        max-width: 82px;
+      }
+      .tv3 {
+        max-width: 57px;
+      }
+      .pyatnica {
+        max-width: 130px;
+      }
+      .dvax2 {
+        max-width: 94px;
+      }
+      .tnt4 {
+        max-width: 58px;
+      }
+      .super {
+        max-width: 109px;
+      }
+      .match {
+        max-width: 107px;
+      }
+      .premier {
+        max-width: 153px;
+      }
+      .match_premier {
+        max-width: 174px;
+      }
+      .sportbox {
+        max-width: 188px;
+      }
+      .match_club {
+        max-width: 58px;
+      }
+    }
+  }
+  .carousel-logo {
+    // padding-bottom: 40px;
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 40px auto 80px;
+  }
+  .carousel-logo .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-slide a{
+    width: 50%!important;
+  }
+  .slick-slide img {
+    width: auto !important;
+    max-height: 56px;
+  }
+  .slick-arrow {
+    position: absolute;
+    width: 15px;
+    top: calc(50% - 12px);
+    &.next-slick {
+      right: 5%;
+    }
+    &.prev-slick {
+      left: 5%;
+      z-index: 3;
+      transform: rotate(180deg);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

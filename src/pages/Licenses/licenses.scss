@@ -1,0 +1,129 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.license__items {
+  margin-top: 60px;
+  @media (max-width: $mobile_l) {
+    margin-top: 30px;
+  }
+  .license__item {
+    padding-bottom: 40px;
+    padding-top: 60px;
+    border-bottom: 3px solid $blue;
+    display: flex;
+    justify-content: space-between;
+
+    transition: height 0.5s ease;
+    @media (max-width: $mobile_l) {
+      flex-direction: row;
+      border-bottom: none;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0px solid $blue;
+    }
+    .license__item--left {
+      display: flex;
+      justify-content: space-between;
+      /* TODO delete */
+      @media (max-width: $mobile_l) {
+        border-bottom: 0.461165px solid $gray;
+        padding: 20px 0px;
+        width: calc(100% - 20px);
+        display: block;
+      }
+      /* TODO delete */
+      .title {
+        width: 55%;
+        max-width: 570px;
+        display: inline-block;
+        /* TODO delete */
+        @media (max-width: $mobile_l) {
+          font-size: 18px;
+          line-height: 22px;
+          width: 100%;
+          padding-right: 15px;
+        }
+        /* TODO delete */
+      }
+      .props {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 45%;
+        .props-content {
+          @media (min-width: $mobile_l+1) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+        }
+        /* TODO delete */
+        @media (max-width: $mobile_l) {
+          display: block;
+          width: 100%;
+          transition: height 0.5s ease, opacity 0.5s ease;
+          height: 0;
+          opacity: 0.2;
+          overflow: hidden;
+          &.active {
+            opacity: 1;
+          }
+        }
+        /* TODO delete */
+        .prop {
+          width: 45%;
+          margin-right: 2%;
+          margin-bottom: rem(30);
+          @media (max-width: $mobile_l) {
+            width: 100%;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            &:first-child {
+              padding-top: 15px;
+            }
+          }
+        }
+        .prop-title {
+          font-size: rem(20);
+          line-height: rem(24);
+          font-weight: 600;
+          color: $blue;
+          padding-bottom: 7px;
+          @media (max-width: $mobile_l) {
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+        .prop-data {
+          color: $gray;
+          @media (max-width: $mobile_l) {
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+    /* TODO delete */
+    .license__item--right {
+      @media (min-width: $mobile_l+1) {
+        display: none;
+      }
+      width: 20px;
+      padding-top: 23px;
+      .arrow-light {
+        transform: rotate(-90deg);
+        transition: transform 0.5s ease;
+        left: -8px;
+        position: relative;
+
+        &.active {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    /* TODO delete */
+  }
+}

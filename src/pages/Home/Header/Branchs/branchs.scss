@@ -1,0 +1,101 @@
+@import "../static/sass/variables.scss";
+@import "../static/sass/mixins.scss";
+
+.circle {
+  width: rem(10);
+  height: rem(10);
+  margin-right: rem(10);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+.bottom {
+  color: #fff;
+  font-weight: 400;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .container {
+    @media (max-width: $mobile_l) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: $mobile_l) {
+    position: relative;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: $mobile_l) {
+      justify-content: center;
+    }
+  }
+  /*&__left {
+		display: flex;
+		@include mq(tablet, max) {
+			padding-bottom: 2vh;
+		}
+	}*/
+  &__right {
+    display: flex;
+    @media (max-width: $mobile_l) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: rem(23);
+    line-height: rem(28);
+    background-color: $blue;
+    margin-right: rem(35);
+    min-width: rem(280);
+    min-height: rem(90);
+    transition: background 0.5s ease;
+
+    span {
+      width: 100%;
+    }
+    &:hover {
+      cursor: pointer;
+      background: #0945ad;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      min-height: 4.5rem;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: $mobile_l) {
+        height: 55px;
+        line-height: 1.4rem;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    @media (max-width: $mobile_l) {
+      margin-right: 0;
+      margin-bottom: 14px;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: rem(28);
+      width: 100%;
+      min-width: 100%;
+      min-height: rem(55);
+      height: 55px;
+      &:last-child {
+        margin-bottom: rem(0);
+      }
+    }
+  }
+}

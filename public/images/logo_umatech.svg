@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="193"
+   height="68"
+   viewBox="0 0 193 68"
+   fill="none"
+   version="1.1"
+   id="svg3834"
+   sodipodi:docname="Group 10.svg"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)">
+  <metadata
+     id="metadata3840">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3838" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="982"
+     id="namedview3836"
+     showgrid="false"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:zoom="9.0621762"
+     inkscape:cx="96.159899"
+     inkscape:cy="34"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3834" />
+  <path
+     d="M 194.0284,0 H 0 v 68.2207 h 194.0284 z"
+     id="path3814"
+     inkscape:connector-curvature="0"
+     style="fill:#0059e5;stroke-width:1.00701129" />
+  <path
+     d="M28.7672 46.361C28.7672 47.9748 28.1801 50.1754 23.4835 50.1754C18.787 50.1754 18.1999 47.9748 18.1999 46.361V14.672H16.1451C14.971 14.672 13.9436 15.699 13.9436 16.8726V46.361C13.9436 51.2023 17.1725 53.5497 23.4835 53.5497C29.7946 53.5497 33.0235 51.0556 33.0235 46.361V14.672H28.914V46.361H28.7672Z"
+     fill="white"
+     id="path3816" />
+  <path
+     d="M48.5804 32.276L41.9758 14.671H37.5728V53.5487H41.6823V25.6741L47.2594 40.4917C47.4062 40.9318 47.9933 41.2252 48.5804 41.2252C49.1674 41.2252 49.6077 40.9318 49.9013 40.4917L55.4785 25.6741V53.5487H59.588V14.671H55.1849L48.5804 32.276Z"
+     fill="white"
+     id="path3818" />
+  <path
+     d="M76.6133 16.8716C76.173 15.5513 74.852 14.671 73.2376 14.671H71.3296L62.23 53.5487H66.4863L69.1281 42.3989H78.2277L80.8695 53.5487H85.1258L76.6133 16.8716ZM77.4939 39.1713H70.0087L73.8247 23.0334L77.4939 39.1713Z"
+     fill="white"
+     id="path3820" />
+  <path
+     d="M90.5564 52.8156V50.615H93.1982C93.345 50.615 93.4917 50.7617 93.4917 50.7617V52.8156H90.5564Z"
+     fill="white"
+     id="path3822" />
+  <path
+     d="M94.5194 50.7612V53.6954H89.5293V49.7343H93.1985C93.9323 49.7343 94.5194 50.1744 94.5194 50.7612ZM91.584 51.9349H92.6114V51.4947H91.584V51.9349Z"
+     fill="white"
+     id="path3824" />
+  <path
+     d="M118.296 53.6959H134.44V50.1749H122.552V35.9442H131.358V32.2765H122.552V18.0458H132.679C133.56 18.0458 134.293 17.3122 134.293 16.432V14.5248H118.149V53.6959H118.296Z"
+     fill="white"
+     id="path3826" />
+  <path
+     d="M146.475 13.9375C138.55 13.9375 136.936 18.0453 136.936 21.4196V46.2133C136.936 49.5876 138.55 53.6954 146.475 53.6954C154.401 53.6954 156.015 49.5876 156.015 46.2133V41.0785H153.667C152.493 41.0785 151.612 41.9588 151.612 43.1324V46.36C151.612 47.9738 151.025 50.1744 146.329 50.1744C141.632 50.1744 141.045 47.9738 141.045 46.36V21.4196C141.045 19.8058 141.632 17.6052 146.329 17.6052C151.025 17.6052 151.612 19.8058 151.612 21.4196V24.3538C151.612 25.6742 152.64 26.7011 153.961 26.7011H156.015V21.5663C156.015 18.0453 154.401 13.9375 146.475 13.9375Z"
+     id="path3828"
+     fill="white" />
+  <path
+     d="M177.296 14.3777H174.654V32.2761H164.234V16.2849C164.234 15.1112 163.353 14.231 162.179 14.231H159.978V53.5487H164.234V35.7971H174.654V53.6954H178.911V15.9915C179.057 15.1112 178.324 14.3777 177.296 14.3777Z"
+     id="path3830"
+     fill="white" />
+  <path
+     d="M97.1609 18.1925H104.499V53.6959H108.756V18.1925H114.186C115.213 18.1925 116.094 17.3122 116.094 16.2853V14.5248H97.0142V18.1925H97.1609Z"
+     fill="white"
+     id="path3832" />
+</svg>

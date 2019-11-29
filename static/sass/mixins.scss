@@ -1,0 +1,124 @@
+/* Mixins */
+
+@mixin transition($property: all, $duration: 0.3s, $ease: linear) {
+  -moz-transition: $property $duration $ease;
+  -o-transition: $property $duration $ease;
+  -webkit-transition: $property $duration $ease;
+  transition: $property $duration $ease;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin linear-gradient($args...) {
+  background-image: -o-linear-gradient($args);
+  background-image: -moz-linear-gradient($args);
+  background-image: -webkit-linear-gradient($args);
+  background-image: linear-gradient($args);
+}
+
+/* FROM LENA */
+//МЕДИАЗАПРОСЫ
+$breakpoints: (
+  "phone": 481px,
+  "tablet": 769px,
+  "laptop": 993px,
+  "desktop": 1201px
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// CONVERT PIXELS TO REMS
+$em-base: 20px !default;
+
+@media (max-width: $mobile_p) {
+  $em-base: 16px;
+}
+@media (min-width: $mobile_p+1) and (max-width: $mobile_l) {
+  $em-base: 16px;
+}
+@media (min-width: $mobile_l+1) and (max-width: $tablets) {
+  $em-base: 14px;
+}
+@media (min-width: $tablets+1) and (max-width: $desctops_s) {
+  $em-base: 14px;
+}
+@media (min-width: $desctops_s+1) and (max-width: $desctops_m) {
+  $em-base: 16px;
+}
+@media (min-width: $desctops_m+1) and (max-width: $desctops_l) {
+  $em-base: 20px;
+}
+@media (min-width: $desctops_l+1) {
+  $em-base: 20px;
+}
+// eg. for a relational value of 12px write rem(12)
+// Assumes $em-base is the font-size of <html>
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  $base: $em-base;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+// CONVERT PIXELS TO EMS
+// eg. for a relational value of 12px write em(12) when the parent is 16px
+// if the parent is another value say 24px write em(12, 24)
+@function em($pxval, $base: $em-base) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}

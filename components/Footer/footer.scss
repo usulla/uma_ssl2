@@ -1,0 +1,88 @@
+@import "../../static/sass/variables.scss";
+@import "../../static/sass/mixins.scss";
+
+.footer {
+  height: rem(291);
+  display: flex;
+  align-items: center;
+  background-color: $blue;
+  color: #fff;
+  @media (max-width: $mobile_l) {
+    height: auto;
+    padding: 40px 0;
+  }
+  &__block {
+    min-height: rem(74);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 9rem;
+    @media (max-width: $mobile_l) {
+      height: auto;
+      min-height: auto;
+    }
+  }
+  &__license {
+    display: flex;
+    font-size: 12px;
+    line-height: 15px;
+    @media (max-width: $mobile_l) {
+      //   flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    margin-right: 35px;
+    font-weight: 600;
+    &:last-child {
+      margin-right: rem(0);
+    }
+    &:first-child {
+      font-weight: 400;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    @media (max-width: $mobile_l) {
+      &:nth-child(2) {
+        order: 3;
+        width: 48%;
+        margin: 0;
+      }
+      &:nth-child(1) {
+        order: 2;
+        width: 48%;
+        margin: 0;
+      }
+      &:nth-child(3) {
+        order: 1;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .socicons {
+    @media (min-width: $mobile_l+1) {
+      margin-top: -1rem;
+    }
+    @media (max-width: $mobile_l) {
+      margin-bottom: 35px;
+    }
+  }
+  .menu-ul__li {
+    padding: 0px rem(30);
+    &:first-child {
+      padding-left: 0px;
+    }
+    a {
+      height: 1.6rem;
+    }
+  }
+  .cookie_rules{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
